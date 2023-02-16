@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="agregadosVentanaBienvenidaYVentanaPrincipal">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/procesamiento-de-texto.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/MainGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/WelcomeGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/logoUGwritter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/principal/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/MainGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainGui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +65,17 @@
       <workItem from="1676415206648" duration="1774000" />
       <workItem from="1676417897703" duration="3912000" />
       <workItem from="1676509881705" duration="3019000" />
-      <workItem from="1676570397719" duration="674000" />
+      <workItem from="1676570397719" duration="778000" />
+      <workItem from="1676581598298" duration="315000" />
     </task>
+    <task id="LOCAL-00001" summary="agregadosVentanaBienvenidaYVentanaPrincipal">
+      <created>1676571110062</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676571110062</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
