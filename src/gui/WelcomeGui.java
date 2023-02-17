@@ -13,7 +13,7 @@ public class WelcomeGui extends JFrame{
        //quitar bordes
        setUndecorated(true);
        // Crear un JLabel para la imagen y agregarlo al panel
-       ImageIcon imageIcon = new ImageIcon("src\\img\\logoUGwritter.png");
+       ImageIcon imageIcon = new ImageIcon("src\\img\\AncedaLogoB.png");
        JLabel imageLabel = new JLabel(imageIcon);
        panel.add(imageLabel, BorderLayout.CENTER);
 
@@ -28,6 +28,8 @@ public class WelcomeGui extends JFrame{
        setSize(400, 300);
        setLocationRelativeTo(null);
        setVisible(true);
+
+
    }
 
 
