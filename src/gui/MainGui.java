@@ -3,6 +3,8 @@ package gui;
 import modelo.PanelTexto;
 import javax.swing.*;
 import java.awt.*;
+import modelo.Menu;
+import modelo.BarraTarea;
 
 public class MainGui extends JFrame {
     public MainGui() {
@@ -11,16 +13,11 @@ public class MainGui extends JFrame {
         setIconImage(icon);
 
         Color colorC = new Color(233,245,255);
-
-
-        //panel de texto
-        PanelTexto panelTexto = new PanelTexto();
-        JScrollPane scrollPane = new JScrollPane(panelTexto);
-        scrollPane.setPreferredSize(new Dimension(545, 842));
-        panelTexto.setPreferredSize(new Dimension(545, 842));
-        add(panelTexto, BorderLayout.CENTER);
-
-        pack();
+        //agregar menu
+        Menu menu = new Menu();
+        setJMenuBar(menu);
+        BarraTarea barra = new BarraTarea();
+        getContentPane().add(barra, BorderLayout.PAGE_START);
 
         setSize(800, 600);
 
