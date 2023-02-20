@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="addBarraTareas">
-      <change afterPath="$PROJECT_DIR$/src/interfaces/BarraTareaInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/MenuInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/DlgAutor.java" afterDir="false" />
+    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="addPanelTexto">
+      <change afterPath="$PROJECT_DIR$/src/modelo/FormatoDocumento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/MainGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/Listeners.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/PanelTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PanelTexto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +118,8 @@
       <workItem from="1676666910160" duration="4360000" />
       <workItem from="1676675832995" duration="2897000" />
       <workItem from="1676686282644" duration="1962000" />
-      <workItem from="1676749841676" duration="3424000" />
+      <workItem from="1676749841676" duration="6539000" />
+      <workItem from="1676917836341" duration="5287000" />
     </task>
     <task id="LOCAL-00001" summary="agregadosVentanaBienvenidaYVentanaPrincipal">
       <created>1676571110062</created>
@@ -149,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676686556752</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="addPanelTexto">
+      <created>1676753306328</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676753306328</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +178,8 @@
     <MESSAGE value="VentanaV.2.0.1" />
     <MESSAGE value="VentanaRecuperacionSOS" />
     <MESSAGE value="addBarraTareas" />
-    <option name="LAST_COMMIT_MESSAGE" value="addBarraTareas" />
+    <MESSAGE value="addPanelTexto" />
+    <option name="LAST_COMMIT_MESSAGE" value="addPanelTexto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

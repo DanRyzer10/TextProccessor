@@ -1,6 +1,7 @@
 package principal;
 import gui.MainGui;
 import gui.WelcomeGui;
+import modelo.PanelTexto;
 
 public class Main {
     /*
@@ -20,9 +21,24 @@ public class Main {
         gui.dispose();
         //abrir ventana principal
         MainGui gui2 = new MainGui();
+        //imprimir la variable contenido de la clase PanelTexto cada 10 segundos
+        //para ver si se esta guardando el texto
+        while(true){
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(gui2.getPanelTextoContent());
+        }
 
     }
     public static void main(String[] args) {
         timeWindow();
+        //imprimir la variable contenido de la clase PanelTexto cada 10 segundos
+        //para ver si se esta guardando el texto
+
+
+
     }
 }
