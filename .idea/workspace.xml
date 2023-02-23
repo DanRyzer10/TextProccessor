@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="addPanelTexto">
-      <change afterPath="$PROJECT_DIR$/src/modelo/FormatoDocumento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="addStyleDocument">
+      <change afterPath="$PROJECT_DIR$/src/listeners/BoldLsitener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listeners/ItalicListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelo/PaletaColores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/MainGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/BarraTarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/BarraTarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/PanelTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PanelTexto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Main.java" afterDir="false" />
     </list>
@@ -71,6 +74,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -119,7 +123,11 @@
       <workItem from="1676675832995" duration="2897000" />
       <workItem from="1676686282644" duration="1962000" />
       <workItem from="1676749841676" duration="6539000" />
-      <workItem from="1676917836341" duration="5287000" />
+      <workItem from="1676917836341" duration="5575000" />
+      <workItem from="1676941883237" duration="2714000" />
+      <workItem from="1676944656520" duration="3933000" />
+      <workItem from="1677019121308" duration="889000" />
+      <workItem from="1677114692502" duration="2329000" />
     </task>
     <task id="LOCAL-00001" summary="agregadosVentanaBienvenidaYVentanaPrincipal">
       <created>1676571110062</created>
@@ -156,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676753306328</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="addStyleDocument">
+      <created>1676923264928</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676923264928</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +194,8 @@
     <MESSAGE value="VentanaRecuperacionSOS" />
     <MESSAGE value="addBarraTareas" />
     <MESSAGE value="addPanelTexto" />
-    <option name="LAST_COMMIT_MESSAGE" value="addPanelTexto" />
+    <MESSAGE value="addStyleDocument" />
+    <option name="LAST_COMMIT_MESSAGE" value="addStyleDocument" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

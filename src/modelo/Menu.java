@@ -3,7 +3,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Menu extends JMenuBar{
-    public Menu(){
+    public Menu() {
 
         super();
         JMenu archivo = new JMenu("Archivo");
@@ -20,6 +20,12 @@ public class Menu extends JMenuBar{
         archivo.add(sobreescribir);
         JMenuItem autors = new JMenuItem("Autores");
         autores.add(autors);
+        //aplicar un color
+        Color colorC = new Color(255,255,255);
+
+        this.setBackground(colorC);
+
+
     }
 
 

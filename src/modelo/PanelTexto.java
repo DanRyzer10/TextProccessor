@@ -7,12 +7,13 @@ import javax.swing.event.*;
 import java.awt.*;
 
 public class PanelTexto extends JTextPane{
-    public String contenido;
+    public static String contenido;
+    public static StyledDocument doc;
 
 
     public PanelTexto() {
         super();
-        this.contenido = "";
+        contenido = "";
         this.setBackground(Color.WHITE);
         this.setFont(new Font("Arial", Font.PLAIN, 15));
         this.setForeground(Color.BLACK);
@@ -23,20 +24,21 @@ public class PanelTexto extends JTextPane{
         setMinimumSize(new Dimension(545, 842));
 
         //estilo documento
-        StyledDocument doc = this.getStyledDocument();
+        doc = this.getStyledDocument();
         Style style = this.addStyle("mystyle", null);
         StyleConstants.setLineSpacing(style, 0.2f);
         StyleConstants.setAlignment(style, StyleConstants.ALIGN_LEFT);
-        StyleConstants.setFontFamily(style, "Arial");
+        StyleConstants.setFontFamily(style, "Times New Roman");
         StyleConstants.setFontSize(style, 12);
         StyleConstants.setLeftIndent(style, 20);
+        StyleConstants.setLineSpacing(style, 0.2f);
         StyleConstants.setRightIndent(style, 20);
         StyleConstants.setFirstLineIndent(style, 20);
         StyleConstants.setSpaceAbove(style, 10);
         StyleConstants.setSpaceBelow(style, 10);
         StyleConstants.setItalic(style, false);
-        doc.setParagraphAttributes(0, doc.getLength(), style, true);
-
+        StyleConstants.setBold(style, false);
+        doc.setParagraphAttributes(0, this.doc.getLength(), style, true);
 
 
         //agregar marcos grises

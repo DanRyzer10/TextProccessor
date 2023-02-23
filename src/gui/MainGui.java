@@ -34,9 +34,6 @@ public class MainGui extends JFrame {
         getContentPane().add(scrollPane, BorderLayout.CENTER);
 
 
-
-
-
         setSize(800, 600);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
@@ -52,6 +49,9 @@ public class MainGui extends JFrame {
 
     public String getPanelTextoContent(){
         return panelTexto.contenido;
+    }
+    public PanelTexto getPanelTexto(){
+        return panelTexto;
     }
 
 }
