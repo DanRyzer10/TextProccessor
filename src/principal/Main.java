@@ -1,7 +1,6 @@
 package principal;
 import gui.MainGui;
 import gui.WelcomeGui;
-import modelo.PanelTexto;
 
 import javax.swing.*;
 

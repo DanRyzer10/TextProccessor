@@ -1,27 +1,28 @@
 package listeners;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 import modelo.PanelTexto;
 import principal.Main;
-import javax.swing.text.StyledDocument;
-import javax.swing.text.*;
-public class ItalicListener implements ActionListener {
-    boolean italicaActiva = false;
 
+import javax.swing.text.*;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class DisminuirLetra implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
-        italicaActiva = !italicaActiva;
-        applyItalic(italicaActiva);
+        disminuirLetra();
 
     }
-    public void applyItalic(boolean italicaActiva) {
+
+    public void disminuirLetra(){
         final StyledDocument doc = PanelTexto.doc;
-        int inicio =Main.gui2.getPanelTexto().getSelectionStart();
+        int tamanoLetra = StyleConstants.getFontSize(doc.getCharacterElement(0).getAttributes());
+        int inicio = Main.gui2.getPanelTexto().getSelectionStart();
         int fin = Main.gui2.getPanelTexto().getSelectionEnd();
         AttributeSet atributosActuales = doc.getCharacterElement(inicio).getAttributes();
         SimpleAttributeSet nuevoAtributo = new SimpleAttributeSet();
         nuevoAtributo.addAttributes(atributosActuales);
-        StyleConstants.setItalic(nuevoAtributo, italicaActiva);
+        StyleConstants.setFontSize(nuevoAtributo, tamanoLetra -1);
         doc.setCharacterAttributes(inicio, fin - inicio, nuevoAtributo, true);
         try {
             PanelTexto.contenido = Main.gui2.getPanelTexto().getText(0, doc.getLength());
@@ -29,4 +30,7 @@ public class ItalicListener implements ActionListener {
             throw new RuntimeException(ex);
         }
     }
+
+
+
 }

@@ -1,4 +1,6 @@
 package modelo;
+import listeners.AumentarLetra;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -27,22 +29,26 @@ public class BarraTarea extends JToolBar{
         JButton botonS = new JButton();
         botonS.setIcon(new ImageIcon("src\\img\\icons\\subrayar.png"));
         botonS.setToolTipText("Subrayado");
+        botonS.addActionListener(new listeners.SubrayadoListener());
         this.add(botonS);
         this.addSeparator(new Dimension(20, 20));
         JButton botonC = new JButton();
         botonC.setIcon(new ImageIcon("src\\img\\icons\\textColor.png"));
         botonC.setToolTipText("Color de texto");
+        botonC.addActionListener(new listeners.ColorListener());
         this.add(botonC);
         this.addSeparator(new Dimension(20, 20));
         JButton botonA = new JButton();
         botonA.setIcon(new ImageIcon("src\\img\\icons\\agrandar.png"));
         botonA.setToolTipText("Aumentar tamaño");
+        botonA.addActionListener(new listeners.AumentarLetra());
 
         this.add(botonA);
         this.addSeparator(new Dimension(20, 20));
         JButton botonD = new JButton();
         botonD.setIcon(new ImageIcon("src\\img\\icons\\disminuir.png"));
         botonD.setToolTipText("Disminuir tamaño");
+        botonD.addActionListener(new listeners.DisminuirLetra());
         this.add(botonD);
         this.addSeparator(new Dimension(20, 20));
         //aplicar espacio entre botones de 20 pixeles

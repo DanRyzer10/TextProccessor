@@ -1,10 +1,9 @@
 package modelo;
 import javax.swing.*;
 import javax.swing.text.*;
-import javax.swing.text.StyledEditorKit;
-import javax.swing.event.*;
 
 import java.awt.*;
+
 
 public class PanelTexto extends JTextPane{
     public static String contenido;
@@ -22,12 +21,12 @@ public class PanelTexto extends JTextPane{
         setPreferredSize(new Dimension(545, 842));
         setMaximumSize(new Dimension(545, 842));
         setMinimumSize(new Dimension(545, 842));
-
+        //setEditorKit();
         //estilo documento
         doc = this.getStyledDocument();
         Style style = this.addStyle("mystyle", null);
         StyleConstants.setLineSpacing(style, 0.2f);
-        StyleConstants.setAlignment(style, StyleConstants.ALIGN_LEFT);
+        StyleConstants.setAlignment(style, StyleConstants.ALIGN_JUSTIFIED);
         StyleConstants.setFontFamily(style, "Times New Roman");
         StyleConstants.setFontSize(style, 12);
         StyleConstants.setLeftIndent(style, 20);
@@ -50,26 +49,7 @@ public class PanelTexto extends JTextPane{
             }
 
         });
-
-        /*
-        this.setEditorKit(new StyledEditorKit() {
-            @Override
-            public ViewFactory getViewFactory() {
-                final StyledEditorKit.StyledViewFactory factory = new StyledViewFactory();
-                return factory;
-            }
-        });
-
-
-        this.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                contenido = getText();
-            }
-        });
-
-
-         */
-
-
+        setEditorKit(new PanelEditor());
+        setDocument(doc);
     }
 }
