@@ -7,7 +7,6 @@ import javax.swing.text.Element;
 import javax.swing.text.View;
 import javax.swing.text.*;
 
-
 public class PanelEditor extends StyledEditorKit {
     ViewFactory defaultFactory = new WrapColumnFactory();
     @Override

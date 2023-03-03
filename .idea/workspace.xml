@@ -4,20 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="addListenersBOLDandItalic">
-      <change afterPath="$PROJECT_DIR$/src/listeners/AumentarLetra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listeners/ColorListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listeners/DisminuirLetra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listeners/SubrayadoListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/PanelEditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/colors/PanelColor.java" afterDir="false" />
+    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="resueltoProblemaDeParrafo">
+      <change afterPath="$PROJECT_DIR$/src/gui/AutorsFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/cepeda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listeners/EditorColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listeners/FuentesListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listeners/GuardarListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/metodos/Guardar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modelo/BarraInferior.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/BoldLsitener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/BoldLsitener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/ItalicListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/ItalicListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/MainGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/WelcomeGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/WelcomeGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/BarraTareaInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/MenuInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/ColorListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/BarraTarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/BarraTarea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/PaletaColores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/FormatoDocumento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/PanelEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PanelEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/PanelTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PanelTexto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/colors/PanelColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +74,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -84,6 +93,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Desktop\projects\java_aplications\JAVA\procesamiento-de-texto\src\img\icons" />
       <recent name="C:\Users\Usuario\Desktop\projects\JAVA\procesamiento-de-texto\src\img" />
     </key>
   </component>
@@ -135,7 +145,17 @@
       <workItem from="1677167641339" duration="649000" />
       <workItem from="1677547910214" duration="6912000" />
       <workItem from="1677555689216" duration="368000" />
-      <workItem from="1677714521696" duration="1577000" />
+      <workItem from="1677714521696" duration="2652000" />
+      <workItem from="1677717257081" duration="101000" />
+      <workItem from="1677717779545" duration="1764000" />
+      <workItem from="1677722697387" duration="2332000" />
+      <workItem from="1677725336982" duration="1370000" />
+      <workItem from="1677783185187" duration="846000" />
+      <workItem from="1677784079065" duration="18000" />
+      <workItem from="1677784138641" duration="245000" />
+      <workItem from="1677784434646" duration="95000" />
+      <workItem from="1677784571726" duration="1747000" />
+      <workItem from="1677806305599" duration="3555000" />
     </task>
     <task id="LOCAL-00001" summary="agregadosVentanaBienvenidaYVentanaPrincipal">
       <created>1676571110062</created>
@@ -186,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677117064127</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="resueltoProblemaDeParrafo">
+      <created>1677716530258</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677716530258</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +238,8 @@
     <MESSAGE value="addPanelTexto" />
     <MESSAGE value="addStyleDocument" />
     <MESSAGE value="addListenersBOLDandItalic" />
-    <option name="LAST_COMMIT_MESSAGE" value="addListenersBOLDandItalic" />
+    <MESSAGE value="resueltoProblemaDeParrafo" />
+    <option name="LAST_COMMIT_MESSAGE" value="resueltoProblemaDeParrafo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

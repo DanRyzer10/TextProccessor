@@ -1,8 +1,9 @@
 package modelo;
-import listeners.AumentarLetra;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class BarraTarea extends JToolBar{
     public BarraTarea(){
@@ -34,9 +35,15 @@ public class BarraTarea extends JToolBar{
         this.addSeparator(new Dimension(20, 20));
         JButton botonC = new JButton();
         botonC.setIcon(new ImageIcon("src\\img\\icons\\textColor.png"));
-        botonC.setToolTipText("Color de texto");
-        botonC.addActionListener(new listeners.ColorListener());
+        botonC.setToolTipText("ultimo color usado");
+
         this.add(botonC);
+
+        JButton botonF = new JButton();
+        botonF.setIcon(new ImageIcon("src\\img\\icons\\arrow.png"));
+        botonF.setToolTipText("paleta de colores");
+        botonF.addActionListener(new listeners.EditorColor());
+        this.add(botonF);
         this.addSeparator(new Dimension(20, 20));
         JButton botonA = new JButton();
         botonA.setIcon(new ImageIcon("src\\img\\icons\\agrandar.png"));
@@ -50,6 +57,26 @@ public class BarraTarea extends JToolBar{
         botonD.setToolTipText("Disminuir tamaño");
         botonD.addActionListener(new listeners.DisminuirLetra());
         this.add(botonD);
+        this.addSeparator(new Dimension(20, 20));
+
+        //boton de fuentes
+        JComboBox<String> combobox;
+        String[] fuentes = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
+        combobox = new JComboBox<>(fuentes);
+        JButton botonFuentes = new JButton("seleccionar fuente");
+        botonFuentes.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int resultado = JOptionPane.showConfirmDialog(null, combobox, "Seleccione una fuente", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+                if (resultado ==JOptionPane.OK_OPTION){
+                    String fuente = combobox.getSelectedItem().toString();
+                    listeners.FuentesListener fuentesListener = new listeners.FuentesListener();
+                    fuentesListener.cambiarFuente(fuente);
+                }
+            }
+        });
+        botonFuentes.setToolTipText("seleccionar fuente");
+        this.add(botonFuentes);
         this.addSeparator(new Dimension(20, 20));
         //aplicar espacio entre botones de 20 pixeles
         this.setMargin(new java.awt.Insets(20, 20, 20, 20));

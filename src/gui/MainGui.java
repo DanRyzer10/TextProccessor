@@ -1,5 +1,6 @@
 package gui;
 
+import modelo.BarraInferior;
 import modelo.PanelTexto;
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -20,6 +21,11 @@ public class MainGui extends JFrame {
         setJMenuBar(menu);
         BarraTarea barra = new BarraTarea();
         getContentPane().add(barra, BorderLayout.PAGE_START);
+
+
+
+        BarraInferior barraInferior = new BarraInferior();
+        getContentPane().add(barraInferior, BorderLayout.PAGE_END);
 
         JPanel panel2= new JPanel();
 
@@ -43,12 +49,10 @@ public class MainGui extends JFrame {
 
 
 
-
-
     }
 
     public String getPanelTextoContent(){
-        return panelTexto.contenido;
+        return PanelTexto.contenido;
     }
     public PanelTexto getPanelTexto(){
         return panelTexto;

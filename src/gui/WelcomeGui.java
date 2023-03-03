@@ -5,8 +5,6 @@ import java.awt.*;
 public class WelcomeGui extends JFrame{
 
    public WelcomeGui(){
-
-
        // Crear un JPanel como contenedor
        JPanel panel = new JPanel();
        panel.setLayout(new BorderLayout());

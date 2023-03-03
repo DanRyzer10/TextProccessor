@@ -8,6 +8,8 @@ import java.awt.*;
 public class PanelTexto extends JTextPane{
     public static String contenido;
     public static StyledDocument doc;
+    public static int contador=1;
+    public static int paginas=1;
 
 
     public PanelTexto() {
@@ -51,5 +53,8 @@ public class PanelTexto extends JTextPane{
         });
         setEditorKit(new PanelEditor());
         setDocument(doc);
+        ++contador;
+        ++paginas;
     }
+
 }
