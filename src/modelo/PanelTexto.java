@@ -1,10 +1,7 @@
 package modelo;
 import javax.swing.*;
 import javax.swing.text.*;
-
 import java.awt.*;
-
-
 public class PanelTexto extends JTextPane{
     public static String contenido;
     public static StyledDocument doc;

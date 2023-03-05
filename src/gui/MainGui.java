@@ -1,5 +1,4 @@
 package gui;
-
 import modelo.BarraInferior;
 import modelo.PanelTexto;
 import javax.swing.*;
@@ -10,8 +9,9 @@ import modelo.BarraTarea;
 
 public class MainGui extends JFrame {
     final private PanelTexto panelTexto;
+    public static String titulo="Documento sin titulo";
     public MainGui() {
-        super("Documento sin titulo");
+        super(titulo);
         Image icon = Toolkit.getDefaultToolkit().getImage("src\\img\\AncedaLogoA.png");
         setIconImage(icon);
 

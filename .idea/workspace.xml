@@ -4,28 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="resueltoProblemaDeParrafo">
-      <change afterPath="$PROJECT_DIR$/src/gui/AutorsFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/cepeda.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listeners/EditorColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listeners/FuentesListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listeners/GuardarListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/metodos/Guardar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelo/BarraInferior.java" afterDir="false" />
+    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="agregadosMetodosDeguardarYAsuntosDePANEL">
+      <change afterPath="$PROJECT_DIR$/src/listeners/AbrirListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/metodos/Abrir.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/MainGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/WelcomeGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/WelcomeGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/BarraTareaInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/MenuInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/ColorListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/BarraTarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/BarraTarea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/FormatoDocumento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/GuardarListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/GuardarListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metodos/Guardar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metodos/Guardar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/PanelEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PanelEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/PanelTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PanelTexto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/colors/PanelColor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +142,10 @@
       <workItem from="1677784138641" duration="245000" />
       <workItem from="1677784434646" duration="95000" />
       <workItem from="1677784571726" duration="1747000" />
-      <workItem from="1677806305599" duration="3555000" />
+      <workItem from="1677806305599" duration="3792000" />
+      <workItem from="1677953918249" duration="110000" />
+      <workItem from="1677954066876" duration="3433000" />
+      <workItem from="1677958665484" duration="2872000" />
     </task>
     <task id="LOCAL-00001" summary="agregadosVentanaBienvenidaYVentanaPrincipal">
       <created>1676571110062</created>
@@ -213,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677716530258</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="agregadosMetodosDeguardarYAsuntosDePANEL">
+      <created>1677810069991</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677810069991</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +236,8 @@
     <MESSAGE value="addStyleDocument" />
     <MESSAGE value="addListenersBOLDandItalic" />
     <MESSAGE value="resueltoProblemaDeParrafo" />
-    <option name="LAST_COMMIT_MESSAGE" value="resueltoProblemaDeParrafo" />
+    <MESSAGE value="agregadosMetodosDeguardarYAsuntosDePANEL" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregadosMetodosDeguardarYAsuntosDePANEL" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

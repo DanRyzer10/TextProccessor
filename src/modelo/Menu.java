@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 import gui.AutorsFrame;
 import listeners.GuardarListener;
+import listeners.AbrirListener;
 
 public class Menu extends JMenuBar{
     public Menu() {
@@ -18,6 +19,7 @@ public class Menu extends JMenuBar{
         archivo.add(nuevo);
         JMenuItem abrir = new JMenuItem("Abrir");
         archivo.add(abrir);
+        abrir.addActionListener(new AbrirListener());
         JMenuItem guardar = new JMenuItem("Guardar");
         archivo.add(guardar);
         guardar.addActionListener(new GuardarListener());
