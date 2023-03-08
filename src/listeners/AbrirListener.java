@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 public class AbrirListener implements ActionListener {
+    public static File archivoActual=null;
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -22,6 +23,7 @@ public class AbrirListener implements ActionListener {
             Abrir.cargarArchivo(file, Main.gui2.getPanelTexto());
             MainGui.titulo = file.getName();
             Main.gui2.setTitle(MainGui.titulo);
+            archivoActual = file;
         }
 
     }

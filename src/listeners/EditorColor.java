@@ -1,7 +1,6 @@
 package listeners;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import modelo.PanelTexto;
 import principal.Main;
 import javax.swing.*;

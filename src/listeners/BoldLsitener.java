@@ -5,10 +5,8 @@ import java.awt.event.ActionListener;
 
 import modelo.PanelTexto;
 import principal.Main;
-
 import javax.swing.text.StyledDocument;
 import javax.swing.text.*;
-
 
 public class BoldLsitener implements ActionListener {
     boolean negritaActiva = false;

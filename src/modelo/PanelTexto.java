@@ -26,17 +26,17 @@ public class PanelTexto extends JTextPane{
         Style style = this.addStyle("mystyle", null);
         StyleConstants.setLineSpacing(style, 0.2f);
         StyleConstants.setAlignment(style, StyleConstants.ALIGN_JUSTIFIED);
-        StyleConstants.setFontFamily(style, "Times New Roman");
+        StyleConstants.setFontFamily(style, "arial");
         StyleConstants.setFontSize(style, 12);
         StyleConstants.setLeftIndent(style, 20);
-        StyleConstants.setLineSpacing(style, 0.2f);
+        StyleConstants.setLineSpacing(style, 0.1f);
         StyleConstants.setRightIndent(style, 20);
         StyleConstants.setFirstLineIndent(style, 20);
         StyleConstants.setSpaceAbove(style, 10);
         StyleConstants.setSpaceBelow(style, 10);
         StyleConstants.setItalic(style, false);
         StyleConstants.setBold(style, false);
-        doc.setParagraphAttributes(0, this.doc.getLength(), style, true);
+        doc.setParagraphAttributes(0, doc.getLength(), style, true);
 
 
         //agregar marcos grises
@@ -50,8 +50,7 @@ public class PanelTexto extends JTextPane{
         });
         setEditorKit(new PanelEditor());
         setDocument(doc);
-        ++contador;
-        ++paginas;
+
     }
 
 }

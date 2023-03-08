@@ -22,7 +22,7 @@ public class Abrir extends FileFilter {
     public String getDescription() {
         return "archivos de texto ACD (*.acd)";
     }
-    private String getExtension(File f){
+    protected String getExtension(File f){
         String extension = null;
         String filename = f.getName();
         int index = filename.lastIndexOf('.');

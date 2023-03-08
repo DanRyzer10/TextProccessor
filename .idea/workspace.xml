@@ -4,15 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="agregadosMetodosDeguardarYAsuntosDePANEL">
-      <change afterPath="$PROJECT_DIR$/src/listeners/AbrirListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/metodos/Abrir.java" afterDir="false" />
+    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="agregadoMetodoAbrirYGuardar">
+      <change afterPath="$PROJECT_DIR$/src/listeners/CopiarListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listeners/GuardarComoListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/metodos/Copiar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/MainGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/AbrirListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/AbrirListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/AumentarLetra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/AumentarLetra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/BoldLsitener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/BoldLsitener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/DisminuirLetra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/DisminuirLetra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/EditorColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/EditorColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/FuentesListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/FuentesListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/listeners/GuardarListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/GuardarListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/SubrayadoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/SubrayadoListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metodos/Abrir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metodos/Abrir.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metodos/Guardar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metodos/Guardar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/BarraTarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/BarraTarea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/PanelTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PanelTexto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +61,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2LkUQ9fnccCezliYjmwBDshFzU8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -71,6 +84,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -146,6 +160,8 @@
       <workItem from="1677953918249" duration="110000" />
       <workItem from="1677954066876" duration="3433000" />
       <workItem from="1677958665484" duration="2872000" />
+      <workItem from="1677991495469" duration="2909000" />
+      <workItem from="1678231419915" duration="8449000" />
     </task>
     <task id="LOCAL-00001" summary="agregadosVentanaBienvenidaYVentanaPrincipal">
       <created>1676571110062</created>
@@ -210,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677810069991</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="agregadoMetodoAbrirYGuardar">
+      <created>1677991686250</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677991686250</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +260,8 @@
     <MESSAGE value="addListenersBOLDandItalic" />
     <MESSAGE value="resueltoProblemaDeParrafo" />
     <MESSAGE value="agregadosMetodosDeguardarYAsuntosDePANEL" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregadosMetodosDeguardarYAsuntosDePANEL" />
+    <MESSAGE value="agregadoMetodoAbrirYGuardar" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregadoMetodoAbrirYGuardar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

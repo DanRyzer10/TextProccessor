@@ -6,7 +6,6 @@ import principal.Main;
 import javax.swing.text.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
 public class DisminuirLetra implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {

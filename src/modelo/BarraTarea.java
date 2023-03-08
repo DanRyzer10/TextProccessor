@@ -1,9 +1,12 @@
 package modelo;
 
+import listeners.FuentesListener;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 
 public class BarraTarea extends JToolBar{
     public BarraTarea(){
@@ -69,9 +72,8 @@ public class BarraTarea extends JToolBar{
             public void actionPerformed(ActionEvent e) {
                 int resultado = JOptionPane.showConfirmDialog(null, combobox, "Seleccione una fuente", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
                 if (resultado ==JOptionPane.OK_OPTION){
-                    String fuente = combobox.getSelectedItem().toString();
-                    listeners.FuentesListener fuentesListener = new listeners.FuentesListener();
-                    fuentesListener.cambiarFuente(fuente);
+                    String fuente = Objects.requireNonNull(combobox.getSelectedItem()).toString();
+                    FuentesListener.cambiarFuente(fuente);
                 }
             }
         });

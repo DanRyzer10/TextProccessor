@@ -1,32 +1,36 @@
 package listeners;
-import java.awt.event.*;
-import  javax.swing.JFileChooser;
-import javax.swing.filechooser.FileNameExtensionFilter;
-import java.io.File;
+
+import gui.MainGui;
+import principal.Main;
+import java.io.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import static listeners.AbrirListener.archivoActual;
 import metodos.Guardar;
 
 public class GuardarListener implements ActionListener{
-
-
     @Override
     public void actionPerformed(ActionEvent e) {
         guardar();
-    }
 
+    }
     public void guardar(){
         Guardar guardar = new Guardar();
-        JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setDialogTitle("Guardar archivo");
-        fileChooser.setFileFilter(new FileNameExtensionFilter("Archivos de texto", "acd"));
-        int seleccionUsuario = fileChooser.showSaveDialog(null);
-        if (seleccionUsuario == JFileChooser.APPROVE_OPTION) {
-            File file = fileChooser.getSelectedFile();
-            if (file != null) {
-                if (!file.getName().endsWith(".acd")) {
-                    file = new File(file.getAbsolutePath() + ".acd");
-                }
-                guardar.guardarArchivo(file);
-            }
+
+        File archivo = archivoActual;
+        if (archivo == null) {
+            GuardarComoListener.guardarComo();
+
+        } else {
+            guardar.guardarArchivo(archivo);
+            MainGui.titulo = archivo.getName();
+            Main.gui2.setTitle(MainGui.titulo + " (guardado)");
         }
+
+
+
     }
+
+
+
 }

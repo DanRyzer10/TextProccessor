@@ -1,11 +1,12 @@
 package modelo;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.*;
 import gui.AutorsFrame;
-import listeners.GuardarListener;
+import listeners.CopiarListener;
+import listeners.GuardarComoListener;
 import listeners.AbrirListener;
+import listeners.GuardarListener;
+
 
 public class Menu extends JMenuBar{
     public Menu() {
@@ -15,16 +16,19 @@ public class Menu extends JMenuBar{
         this.add(archivo);
         JMenu autores = new JMenu("Acerca de");
         this.add(autores);
-        JMenuItem nuevo = new JMenuItem("Nuevo");
-        archivo.add(nuevo);
+
         JMenuItem abrir = new JMenuItem("Abrir");
         archivo.add(abrir);
         abrir.addActionListener(new AbrirListener());
+        JMenuItem guardarComo = new JMenuItem("Guardar como...");
+        archivo.add(guardarComo);
+        guardarComo.addActionListener(new GuardarComoListener());
         JMenuItem guardar = new JMenuItem("Guardar");
         archivo.add(guardar);
+        JMenuItem copiar = new JMenuItem("Copiar archivo existente");
+        archivo.add(copiar);
+        copiar.addActionListener(new CopiarListener());
         guardar.addActionListener(new GuardarListener());
-        JMenuItem sobreescribir = new JMenuItem("Sobreescribir");
-        archivo.add(sobreescribir);
         JMenuItem autors = new JMenuItem("autores");
         autors.addActionListener(evt -> new AutorsFrame());
         autores.add(autors);

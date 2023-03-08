@@ -1,23 +1,13 @@
 package listeners;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import modelo.PanelTexto;
 import principal.Main;
-
 import javax.swing.text.StyledDocument;
 import javax.swing.text.*;
 
-public class FuentesListener implements ActionListener{
+public class FuentesListener{
 
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-
-    }
-    public void cambiarFuente(String fuente){
+    public static void cambiarFuente(String fuente){
         final StyledDocument doc1 = PanelTexto.doc;
-
         int inicio =Main.gui2.getPanelTexto().getSelectionStart();
         int fin = Main.gui2.getPanelTexto().getSelectionEnd();
         AttributeSet atributosActuales = doc1.getCharacterElement(inicio).getAttributes();
