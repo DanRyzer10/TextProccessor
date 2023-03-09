@@ -67,14 +67,11 @@ public class BarraTarea extends JToolBar{
         String[] fuentes = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
         combobox = new JComboBox<>(fuentes);
         JButton botonFuentes = new JButton("seleccionar fuente");
-        botonFuentes.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int resultado = JOptionPane.showConfirmDialog(null, combobox, "Seleccione una fuente", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-                if (resultado ==JOptionPane.OK_OPTION){
-                    String fuente = Objects.requireNonNull(combobox.getSelectedItem()).toString();
-                    FuentesListener.cambiarFuente(fuente);
-                }
+        botonFuentes.addActionListener(e -> {
+            int resultado = JOptionPane.showConfirmDialog(null, combobox, "Seleccione una fuente", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+            if (resultado ==JOptionPane.OK_OPTION){
+                String fuente = Objects.requireNonNull(combobox.getSelectedItem()).toString();
+                FuentesListener.cambiarFuente(fuente);
             }
         });
         botonFuentes.setToolTipText("seleccionar fuente");
@@ -83,6 +80,15 @@ public class BarraTarea extends JToolBar{
         //aplicar espacio entre botones de 20 pixeles
         this.setMargin(new java.awt.Insets(20, 20, 20, 20));
         this.setBackground(Color.WHITE);
+        this.addSeparator(new Dimension(20, 20));
+
+        JButton botonG = new JButton();
+        botonG.setIcon(new ImageIcon("src\\img\\icons\\quitar-texto.png"));
+        botonG.setToolTipText("Quitar todo el formato");
+        botonG.addActionListener(new listeners.QuitarFormatoListener());
+        this.add(botonG);
+
+
 
 
     }

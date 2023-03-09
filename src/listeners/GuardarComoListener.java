@@ -9,8 +9,7 @@ import principal.Main;
 import static listeners.AbrirListener.archivoActual;
 
 public class GuardarComoListener implements ActionListener{
-
-
+    public static boolean guardado = false;
     @Override
     public void actionPerformed(ActionEvent e) {
         guardarComo();
@@ -35,9 +34,7 @@ public class GuardarComoListener implements ActionListener{
                 }
             }
             guardar.guardarArchivo(file);
-            MainGui.titulo = file.getName();
-            Main.gui2.setTitle(MainGui.titulo);
-            archivoActual = file;
+            GuardarListener.actualizarTitulo(true);
         }
 
     }

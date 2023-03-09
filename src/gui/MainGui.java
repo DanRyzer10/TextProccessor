@@ -6,13 +6,16 @@ import javax.swing.border.Border;
 import java.awt.*;
 import modelo.Menu;
 import modelo.BarraTarea;
+import listeners.CerrarVentanaListener;
+
 
 public class MainGui extends JFrame {
+
     final private PanelTexto panelTexto;
     public static String titulo="Documento sin titulo";
     public MainGui() {
         super(titulo);
-        Image icon = Toolkit.getDefaultToolkit().getImage("src\\img\\AncedaLogoA.png");
+        Image icon = Toolkit.getDefaultToolkit().getImage("src\\img\\AncedaLogoB.png");
         setIconImage(icon);
 
         Color colorC = new Color(233,245,255);
@@ -44,8 +47,9 @@ public class MainGui extends JFrame {
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         setVisible(true);
+        this.addWindowListener(new CerrarVentanaListener());
 
 
 

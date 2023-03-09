@@ -2,10 +2,7 @@ package modelo;
 import java.awt.*;
 import javax.swing.*;
 import gui.AutorsFrame;
-import listeners.CopiarListener;
-import listeners.GuardarComoListener;
-import listeners.AbrirListener;
-import listeners.GuardarListener;
+import listeners.*;
 
 
 public class Menu extends JMenuBar{
@@ -16,6 +13,9 @@ public class Menu extends JMenuBar{
         this.add(archivo);
         JMenu autores = new JMenu("Acerca de");
         this.add(autores);
+        JMenuItem nuevo = new JMenuItem("Nuevo");
+        archivo.add(nuevo);
+        nuevo.addActionListener(evt -> new NuevoListener().nuevo());
 
         JMenuItem abrir = new JMenuItem("Abrir");
         archivo.add(abrir);

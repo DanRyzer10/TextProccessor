@@ -4,24 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="agregadoMetodoAbrirYGuardar">
-      <change afterPath="$PROJECT_DIR$/src/listeners/CopiarListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listeners/GuardarComoListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/metodos/Copiar.java" afterDir="false" />
+    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="agregadoMetodosCopiarySobreescribir">
+      <change afterPath="$PROJECT_DIR$/src/listeners/CerrarVentanaListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listeners/NuevoListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/listeners/QuitarFormatoListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/AbrirListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/AbrirListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/AumentarLetra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/AumentarLetra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/BoldLsitener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/BoldLsitener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/DisminuirLetra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/DisminuirLetra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/EditorColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/EditorColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/FuentesListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/FuentesListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/MainGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listeners/GuardarComoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/GuardarComoListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/listeners/GuardarListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/GuardarListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/SubrayadoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/SubrayadoListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metodos/Abrir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metodos/Abrir.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metodos/Guardar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metodos/Guardar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/BarraTarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/BarraTarea.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/PanelTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PanelTexto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +153,10 @@
       <workItem from="1677954066876" duration="3433000" />
       <workItem from="1677958665484" duration="2872000" />
       <workItem from="1677991495469" duration="2909000" />
-      <workItem from="1678231419915" duration="8449000" />
+      <workItem from="1678231419915" duration="8489000" />
+      <workItem from="1678392721852" duration="66000" />
+      <workItem from="1678392891079" duration="8642000" />
+      <workItem from="1678402856010" duration="1009000" />
     </task>
     <task id="LOCAL-00001" summary="agregadosVentanaBienvenidaYVentanaPrincipal">
       <created>1676571110062</created>
@@ -233,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677991686250</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="agregadoMetodosCopiarySobreescribir">
+      <created>1678239958498</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678239958498</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +263,8 @@
     <MESSAGE value="resueltoProblemaDeParrafo" />
     <MESSAGE value="agregadosMetodosDeguardarYAsuntosDePANEL" />
     <MESSAGE value="agregadoMetodoAbrirYGuardar" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregadoMetodoAbrirYGuardar" />
+    <MESSAGE value="agregadoMetodosCopiarySobreescribir" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregadoMetodosCopiarySobreescribir" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
