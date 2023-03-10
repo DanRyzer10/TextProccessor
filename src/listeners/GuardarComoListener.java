@@ -2,7 +2,6 @@ package listeners;
 import java.awt.event.*;
 import javax.swing.*;
 import java.io.File;
-import gui.MainGui;
 import metodos.Abrir;
 import metodos.Guardar;
 import principal.Main;
@@ -34,8 +33,8 @@ public class GuardarComoListener implements ActionListener{
                 }
             }
             guardar.guardarArchivo(file);
+            Main.gui2.setTitle(file.getName());
             archivoActual = file;
-            Main.gui2.setTitle(archivoActual.getName());
             GuardarListener.actualizarTitulo(Main.gui2.getPanelTexto().cambiosPendientes);
         }
 

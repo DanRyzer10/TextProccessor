@@ -24,7 +24,6 @@ public class PanelTexto extends JTextPane{
         setPreferredSize(new Dimension(545, 842));
         setMaximumSize(new Dimension(545, 842));
         setMinimumSize(new Dimension(545, 842));
-        //setEditorKit();
         //estilo documento
         doc = this.getStyledDocument();
         Style style = this.addStyle("estiloPorDefecto", null);

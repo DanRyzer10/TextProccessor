@@ -1,5 +1,4 @@
 package listeners;
-
 import gui.MainGui;
 import principal.Main;
 import java.io.*;
@@ -20,14 +19,14 @@ public class GuardarListener implements ActionListener{
 
     public static void guardar(){
         Guardar guardar = new Guardar();
-        archivo = archivoActual;
-        if (archivo == null) {
+        if (archivoActual == null) {
             GuardarComoListener.guardarComo();
 
         } else {
-            guardar.guardarArchivo(archivo);
-            Main.gui2.setTitle(archivo.getName());
+            guardar.guardarArchivo(archivoActual);
+            Main.gui2.setTitle(archivoActual.getName());
             actualizarTitulo(Main.gui2.getPanelTexto().cambiosPendientes);
+
 
         }
 
@@ -35,13 +34,13 @@ public class GuardarListener implements ActionListener{
 
     }
     public static void actualizarTitulo(boolean cambiosGuardados){
-        if(archivo!=null){
+        if(archivoActual!=null){
             if(cambiosGuardados){
-                MainGui.titulo = archivo.getName();
-                Main.gui2.setTitle(MainGui.titulo + " (Guardado)");
+
+                Main.gui2.setTitle(archivoActual.getName() + " (Guardado)");
             }else{
-                MainGui.titulo = archivo.getName();
-                Main.gui2.setTitle(MainGui.titulo + "*");
+
+                Main.gui2.setTitle(archivoActual.getName() + "*");
             }
         }
     }

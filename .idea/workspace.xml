@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="agregadoMetodosCopiarySobreescribir">
+    <list default="true" id="03aca34c-26eb-4dda-acbe-c33258c5653a" name="Changes" comment="versionSinComentarios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/MainGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/WelcomeGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/WelcomeGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/listeners/AbrirListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/AbrirListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/listeners/GuardarComoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/GuardarComoListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/listeners/GuardarListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/GuardarListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listeners/QuitarFormatoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/QuitarFormatoListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelo/PanelEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PanelEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modelo/PanelTexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/PanelTexto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +154,9 @@
       <workItem from="1678402856010" duration="1009000" />
       <workItem from="1678410997827" duration="4366000" />
       <workItem from="1678461498611" duration="4445000" />
-      <workItem from="1678474109627" duration="1618000" />
+      <workItem from="1678474109627" duration="1855000" />
+      <workItem from="1678486308905" duration="58000" />
+      <workItem from="1678486455348" duration="2744000" />
     </task>
     <task id="LOCAL-00001" summary="agregadosVentanaBienvenidaYVentanaPrincipal">
       <created>1676571110062</created>
@@ -238,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678239958498</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="versionSinComentarios">
+      <created>1678475948037</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678475948037</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +271,8 @@
     <MESSAGE value="agregadosMetodosDeguardarYAsuntosDePANEL" />
     <MESSAGE value="agregadoMetodoAbrirYGuardar" />
     <MESSAGE value="agregadoMetodosCopiarySobreescribir" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregadoMetodosCopiarySobreescribir" />
+    <MESSAGE value="versionSinComentarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="versionSinComentarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

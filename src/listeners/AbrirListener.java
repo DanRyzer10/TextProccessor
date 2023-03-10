@@ -6,6 +6,9 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+
+import static listeners.GuardarListener.actualizarTitulo;
+
 public class AbrirListener implements ActionListener {
     public static File archivoActual=null;
 
@@ -20,13 +23,14 @@ public class AbrirListener implements ActionListener {
         int seleccion = fileChooser.showOpenDialog(null);
         if (seleccion==JFileChooser.APPROVE_OPTION){
             File file = fileChooser.getSelectedFile();
-            //vaciar el contenido del panel
+            Main.gui2.setTitle(file.getName());
             Main.gui2.getPanelTexto().setText("");
             Abrir.cargarArchivo(file, Main.gui2.getPanelTexto());
-            MainGui.titulo = file.getName();
-            Main.gui2.setTitle(MainGui.titulo);
             archivoActual = file;
+
+
         }
 
     }
+
 }
