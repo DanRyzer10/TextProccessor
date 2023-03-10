@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import static listeners.AbrirListener.archivoActual;
 import metodos.Guardar;
 
+
 public class GuardarListener implements ActionListener{
     public static boolean guardado = false;
     public static File archivo = null;
@@ -25,19 +26,23 @@ public class GuardarListener implements ActionListener{
 
         } else {
             guardar.guardarArchivo(archivo);
-            actualizarTitulo(true);
+            Main.gui2.setTitle(archivo.getName());
+            actualizarTitulo(Main.gui2.getPanelTexto().cambiosPendientes);
+
         }
 
 
 
     }
-    public static void actualizarTitulo(boolean guardado){
-        if(guardado){
-            MainGui.titulo = archivo.getName();
-            Main.gui2.setTitle(MainGui.titulo + " (guardado)");
-        }else{
-            MainGui.titulo = archivo.getName();
-            Main.gui2.setTitle(MainGui.titulo + "*");
+    public static void actualizarTitulo(boolean cambiosGuardados){
+        if(archivo!=null){
+            if(cambiosGuardados){
+                MainGui.titulo = archivo.getName();
+                Main.gui2.setTitle(MainGui.titulo + " (Guardado)");
+            }else{
+                MainGui.titulo = archivo.getName();
+                Main.gui2.setTitle(MainGui.titulo + "*");
+            }
         }
     }
 

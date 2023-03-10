@@ -17,6 +17,7 @@ public class WelcomeGui extends JFrame{
 
        // Crear un JLabel para el texto y agregarlo al panel
        JLabel textLabel = new JLabel("Bienvenido, Iniciando...", SwingConstants.CENTER);
+       textLabel.setFont(new Font("Arial", Font.BOLD, 20));
        panel.add(textLabel, BorderLayout.SOUTH);
 
        // Agregar el panel a la ventana

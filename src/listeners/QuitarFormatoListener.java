@@ -1,6 +1,5 @@
 package listeners;
 import modelo.PanelTexto;
-
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyledDocument;
 import java.awt.event.ActionEvent;

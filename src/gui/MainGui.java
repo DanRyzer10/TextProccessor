@@ -15,7 +15,7 @@ public class MainGui extends JFrame {
     public static String titulo="Documento sin titulo";
     public MainGui() {
         super(titulo);
-        Image icon = Toolkit.getDefaultToolkit().getImage("src\\img\\AncedaLogoB.png");
+        Image icon = Toolkit.getDefaultToolkit().getImage("src\\img\\AncedaLogoA.png");
         setIconImage(icon);
 
         Color colorC = new Color(233,245,255);

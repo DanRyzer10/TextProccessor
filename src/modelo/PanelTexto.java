@@ -2,9 +2,12 @@ package modelo;
 import javax.swing.*;
 import javax.swing.text.*;
 import java.awt.*;
+
+
 public class PanelTexto extends JTextPane{
     public static String contenido;
     public static StyledDocument doc;
+    public boolean cambiosPendientes;
     public static int contador=1;
     public static int paginas=1;
 
@@ -12,6 +15,7 @@ public class PanelTexto extends JTextPane{
     public PanelTexto() {
         super();
         contenido = "";
+        this.cambiosPendientes = true;
         this.setBackground(Color.WHITE);
         this.setFont(new Font("Arial", Font.PLAIN, 15));
         this.setForeground(Color.BLACK);
@@ -23,19 +27,18 @@ public class PanelTexto extends JTextPane{
         //setEditorKit();
         //estilo documento
         doc = this.getStyledDocument();
-        Style style = this.addStyle("mystyle", null);
+        Style style = this.addStyle("estiloPorDefecto", null);
         StyleConstants.setLineSpacing(style, 0.2f);
         StyleConstants.setAlignment(style, StyleConstants.ALIGN_JUSTIFIED);
         StyleConstants.setFontFamily(style, "arial");
         StyleConstants.setFontSize(style, 12);
         StyleConstants.setLeftIndent(style, 20);
-        StyleConstants.setLineSpacing(style, 0.1f);
         StyleConstants.setRightIndent(style, 20);
-        StyleConstants.setFirstLineIndent(style, 20);
+        StyleConstants.setFirstLineIndent(style, 10);
         StyleConstants.setSpaceAbove(style, 10);
-        StyleConstants.setSpaceBelow(style, 10);
         StyleConstants.setItalic(style, false);
         StyleConstants.setBold(style, false);
+
         doc.setParagraphAttributes(0, doc.getLength(), style, true);
 
 
@@ -48,9 +51,12 @@ public class PanelTexto extends JTextPane{
             }
 
         });
+
         setEditorKit(new PanelEditor());
         setDocument(doc);
 
+
     }
+
 
 }

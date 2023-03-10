@@ -34,7 +34,9 @@ public class GuardarComoListener implements ActionListener{
                 }
             }
             guardar.guardarArchivo(file);
-            GuardarListener.actualizarTitulo(true);
+            archivoActual = file;
+            Main.gui2.setTitle(archivoActual.getName());
+            GuardarListener.actualizarTitulo(Main.gui2.getPanelTexto().cambiosPendientes);
         }
 
     }
