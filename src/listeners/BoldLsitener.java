@@ -7,6 +7,13 @@ import modelo.PanelTexto;
 import principal.Main;
 import javax.swing.text.StyledDocument;
 import javax.swing.text.*;
+/*
+    *Listener de Barra de herramientas que aplica negrita al texto seleccionado
+    * @implements ActionListener
+    * creado el 19 de Febrero, 2023, 18:21 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+ */
 
 public class BoldLsitener implements ActionListener {
     boolean negritaActiva = false;
@@ -15,6 +22,10 @@ public class BoldLsitener implements ActionListener {
         negritaActiva = !negritaActiva;
         aplicarNegrita(negritaActiva);
     }
+    /*
+        *Aplica negrita al texto seleccionado
+    */
+
     public void aplicarNegrita(boolean negritaActiva){
         final StyledDocument doc1 = PanelTexto.doc;
 

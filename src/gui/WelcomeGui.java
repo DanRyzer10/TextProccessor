@@ -1,6 +1,13 @@
 package gui;
 import javax.swing.*;
 import java.awt.*;
+/*
+    *Ventana de bienvenida
+    * @extends JFrame
+    * creado el 16 de Febrero, 2023, 13:39 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+ */
 
 public class WelcomeGui extends JFrame{
 

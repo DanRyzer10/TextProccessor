@@ -1,5 +1,10 @@
 package modelo;
-
+/*
+    *Clase que contiene los atributos de un Autor
+    *creado el 20 de febrero, 2023, 21:57 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+ */
 public class Autor {
     private String nombre,photoPath,correo;
 

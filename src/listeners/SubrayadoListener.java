@@ -5,6 +5,13 @@ import modelo.PanelTexto;
 import principal.Main;
 import javax.swing.text.StyledDocument;
 import javax.swing.text.*;
+/*
+ * listener de barra de tareas que eschucha el evento de subrayado
+ * @implements ActionListener
+ * creado el 01 de marzo, 2023, 14:45 hrs
+ * @autor Angel Zambrano & Julio Cepeda
+ * @version POO -2023
+ */
 
 public class SubrayadoListener implements ActionListener{
     boolean subrayadoActivo = false;
@@ -13,7 +20,10 @@ public class SubrayadoListener implements ActionListener{
         subrayadoActivo = !subrayadoActivo;
         subrayado(subrayadoActivo);
     }
-
+    /*
+     * metodo que subraya el texto seleccionado
+     * @param activo booleano que indica si el subrayado esta activo o no
+     */
     public void subrayado(boolean activo){
         final StyledDocument doc1 = PanelTexto.doc;
 

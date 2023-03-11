@@ -1,12 +1,15 @@
 package modelo;
-
 import listeners.FuentesListener;
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Objects;
+/*
+    *barra de herramientas que contiene los botones de negrita, cursiva, subrayado, color de texto y fuentes
+    * @extends JToolBar
+    * creado el 21 de Febrero, 2023, 18:34 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+ */
 
 public class BarraTarea extends JToolBar{
     public BarraTarea(){

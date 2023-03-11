@@ -6,12 +6,22 @@ import principal.Main;
 import javax.swing.text.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+/*
+    *Listener de Barra de herramientas que disminuye el tamaño de la letra del texto seleccionado
+    * @implements ActionListener
+    * creado el 24 de Febrero, 2023, 14:30 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+ */
 public class DisminuirLetra implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         disminuirLetra();
 
     }
+    /*
+        *Disminuye el tamaño de la letra del texto seleccionado
+    */
 
     public void disminuirLetra(){
         final StyledDocument doc = PanelTexto.doc;

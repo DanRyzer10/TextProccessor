@@ -5,6 +5,13 @@ import modelo.PanelTexto;
 import principal.Main;
 import javax.swing.text.StyledDocument;
 import javax.swing.text.*;
+/*
+    *Listener de Barra de herramientas que aumenta el tamaño de la letra del texto seleccionado
+    * @implements ActionListener
+    * creado el 21 de Febrero, 2023, 21:34 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+ */
 
 
 public class AumentarLetra implements ActionListener{
@@ -13,6 +20,9 @@ public class AumentarLetra implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         aumentarLetra();
     }
+    /*
+        *Aumenta el tamaño de la letra del texto seleccionado
+    */
 
     public void aumentarLetra(){
 

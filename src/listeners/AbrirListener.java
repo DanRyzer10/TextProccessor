@@ -1,13 +1,19 @@
 package listeners;
-import gui.MainGui;
+
 import metodos.Abrir;
 import principal.Main;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+/*
+    *Listener de Menu que abre el archivo buscando en la ruta que el usuario elija
 
-import static listeners.GuardarListener.actualizarTitulo;
+    * @implements ActionListener
+    * creado el 21 de Febrero, 2023, 21:34 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+*/
 
 public class AbrirListener implements ActionListener {
     public static File archivoActual=null;
@@ -16,6 +22,10 @@ public class AbrirListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         abrir();
     }
+    /*
+        *Abre archivos .acd desde la ruta que el usuario elija, mediante un JFileChooser
+    */
+
     public void abrir(){
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setDialogTitle("Abrir archivo");

@@ -2,14 +2,24 @@ package metodos;
 import java.io.*;
 import javax.swing.*;
 import javax.swing.text.*;
-
 import javax.swing.text.rtf.*;
 import principal.Main;
+/*
+    *Clase que guarda el archivo en la ruta que el usuario elija
+    * @extends FileFilter
+    * creado el 28 de Febrero, 2023, 21:34 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+ */
 public class Guardar {
     public Document doc;
     public Guardar(){
         this.doc = Main.gui2.getPanelTexto().getDocument();
     }
+    /*
+        *Guarda el archivo
+        * @param file archivo que se va a guardar
+     */
     public void guardarArchivo(File file){
         try {
             OutputStream salida = new FileOutputStream(file);

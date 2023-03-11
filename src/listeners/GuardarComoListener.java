@@ -6,6 +6,13 @@ import metodos.Abrir;
 import metodos.Guardar;
 import principal.Main;
 import static listeners.AbrirListener.archivoActual;
+/*
+  *Listener de Menu que guarda el archivo en la ruta que el usuario elija
+  * implementa interfaz ActionListener
+  * creado el 28 de Febrero, 2023, 22:46 hrs
+  * @autor Angel Zambrano & Julio Cepeda
+  * @version POO -2023
+ */
 
 public class GuardarComoListener implements ActionListener{
     public static boolean guardado = false;
@@ -14,6 +21,9 @@ public class GuardarComoListener implements ActionListener{
         guardarComo();
     }
 
+    /*
+       *Guarda el archivo en la ruta que el usuario elija, mediante un JFileChooser
+     */
     public static void guardarComo() {
         Guardar guardar = new Guardar();
         File file = null;

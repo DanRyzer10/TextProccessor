@@ -2,6 +2,13 @@ package gui;
 import modelo.Autor;
 
 import javax.swing.*;
+/*
+ * frame que muestra los autores del programa
+ * creado el 21 de Febrero, 2023, 20:38 hrs
+ * @author Angel Zambrano
+ * @version POO -2023
+ *
+ */
 
 public class AutorsFrame extends JFrame {
     Autor autor1=new Autor("Angel Zambrano","//", "angel@mail.ec");

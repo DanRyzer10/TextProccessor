@@ -9,6 +9,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+/*
+    *Listener de Menu que copia el archivo seleccionado en la ruta que el usuario elija
+    * @implements ActionListener
+    * creado el 21 de Febrero, 2023, 21:34 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+ */
 
 public class CopiarListener implements ActionListener {
 
@@ -21,6 +28,9 @@ public class CopiarListener implements ActionListener {
         }
 
     }
+    /*
+        *Copia el archivo seleccionado en la ruta que el usuario elija
+    */
 
     public void copiar() throws FileNotFoundException {
         JFileChooser fileChooser = new JFileChooser();

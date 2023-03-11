@@ -6,6 +6,14 @@ import principal.Main;
 import javax.swing.*;
 import javax.swing.text.*;
 import java.awt.*;
+/*
+    *Listener de Barra de herramientas que cambia el color del texto seleccionado
+    * @see javax.swing.text.StyledEditorKit
+    * @implements ActionListener
+    * creado el 21 de Febrero, 2023, 21:34 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+ */
 public class EditorColor implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -14,6 +22,13 @@ public class EditorColor implements ActionListener{
             cambiarColor(color);
         }
     }
+    /*
+        *Cambia el color del texto seleccionado
+        * @param color Color que se desea cambiar
+        * creado el 21 de Febrero, 2023, 21:34 hrs
+        * @autor Angel Zambrano & Julio Cepeda
+        * @version POO -2023
+     */
     public void cambiarColor(Color color){
         final StyledDocument doc1 = PanelTexto.doc;
 

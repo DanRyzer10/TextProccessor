@@ -1,37 +1,44 @@
 package listeners;
-
 import gui.MainGui;
 import principal.Main;
-
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.File;
-
-
+import javax.swing.*;
+import java.awt.event.*;
 import static listeners.AbrirListener.archivoActual;
 
-public class NuevoListener implements ActionListener {
+/*
+  *Listener de Menu que crea un nuevo archivo
+  * @implements ActionListener
+  * creado el 28 de Febrero, 2023, 22:46 hrs
+  * @autor Angel Zambrano & Julio Cepeda
+  * @version POO -2023
+ */
 
-    public File file;
-    public NuevoListener(){
-        this.file = archivoActual;
-        
-    }
-    
+public class NuevoListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
     }
+    /*
+      *crea un nuevo archivo
+      * si el archivo actual tiene cambios pendientes, se abre una ventana de confirmacion
+      * si el archivo actual no tiene cambios pendientes, se crea un nuevo archivo
+     */
     public void nuevo(){
-        if (this.file !=null){
-            //cerrar el archivo
-            this.file = null;
+        if (archivoActual !=null){
+            if(Main.gui2.getPanelTexto().cambiosPendientes){
+                int respuesta = JOptionPane.showConfirmDialog(null, "¿Desea guardar los cambios?", "Guardar", JOptionPane.YES_NO_OPTION);
+                if (respuesta == JOptionPane.YES_OPTION) {
+                    GuardarListener.guardar();
+                }
+            }
+            archivoActual = null;
         }
-        //crear un nuevo archivo
+
         Main.gui2.getPanelTexto().setText("");
         MainGui.titulo = "Documento sin titulo";
         Main.gui2.setTitle(MainGui.titulo);
+
 
 
     }

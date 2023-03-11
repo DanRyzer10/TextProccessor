@@ -2,6 +2,14 @@ package modelo;
 import javax.swing.*;
 import javax.swing.text.*;
 import java.awt.*;
+/*
+    *Panel de texto que se encuentra en el centro de la interfaz
+    * @see javax.swing.JTextPane
+    * @extends JTextPane
+    * creado el 21 de Febrero, 2023, 21:34 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+ */
 
 
 public class PanelTexto extends JTextPane{
@@ -37,6 +45,7 @@ public class PanelTexto extends JTextPane{
         StyleConstants.setSpaceAbove(style, 10);
         StyleConstants.setItalic(style, false);
         StyleConstants.setBold(style, false);
+
 
         doc.setParagraphAttributes(0, doc.getLength(), style, true);
 

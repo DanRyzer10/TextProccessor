@@ -3,6 +3,13 @@ import java.awt.*;
 import javax.swing.*;
 import gui.AutorsFrame;
 import listeners.*;
+/*
+ *Menu de la aplicacion
+ * @extends JMenuBar
+ * creado el 23 de Febrero, 2023, 23:56 hrs
+ * @autor Angel Zambrano
+ * @version POO -2023
+ */
 
 
 public class Menu extends JMenuBar{

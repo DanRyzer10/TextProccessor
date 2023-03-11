@@ -7,8 +7,13 @@ import java.awt.*;
 import modelo.Menu;
 import modelo.BarraTarea;
 import listeners.CerrarVentanaListener;
-
-
+/*
+ *panel principal de la aplicacion
+ * @extends Jframe
+ * creado el 16 de febrero,2023, 11:22 hrs
+ * @autor Angel Zambrano
+ * @version POO -2023
+ */
 public class MainGui extends JFrame {
 
     final private PanelTexto panelTexto;
@@ -53,10 +58,6 @@ public class MainGui extends JFrame {
 
 
 
-    }
-
-    public String getPanelTextoContent(){
-        return PanelTexto.contenido;
     }
     public PanelTexto getPanelTexto(){
         return panelTexto;

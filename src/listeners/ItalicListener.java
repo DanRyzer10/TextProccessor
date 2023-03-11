@@ -5,6 +5,14 @@ import modelo.PanelTexto;
 import principal.Main;
 import javax.swing.text.StyledDocument;
 import javax.swing.text.*;
+/*
+    *Listener de Menu que aplica el estilo italica al texto seleccionado
+    * implementa interfaz ActionListener
+    * creado el 28 de Febrero, 2023, 22:46 hrs
+    * @autor Angel Zambrano & Julio Cepeda
+    * @version POO -2023
+*/
+
 public class ItalicListener implements ActionListener {
     boolean italicaActiva = false;
 
@@ -14,6 +22,10 @@ public class ItalicListener implements ActionListener {
         applyItalic(italicaActiva);
 
     }
+    /*
+        *aplica el estilo italica al texto seleccionado
+        * @param italicaActiva booleano que indica si el estilo italica esta activo
+     */
     public void applyItalic(boolean italicaActiva) {
         final StyledDocument doc = PanelTexto.doc;
         int inicio =Main.gui2.getPanelTexto().getSelectionStart();
